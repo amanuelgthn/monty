@@ -8,10 +8,13 @@ char *str_split(char *str)
 {
 	char delim[] = " ";
 	char *split = strtok(str, delim);
+	char string[2];
+	int i = 0;
 	
 	while(split != NULL)
 	{
 		split = strtok(NULL, delim);
+		string[i] =split;
 	}
-	return (split);
+	return (string);
 }
