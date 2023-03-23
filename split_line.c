@@ -9,9 +9,9 @@ char *str_split(char *str)
 	char delim[] = " ";
 	char *split = strtok(str, delim);
 	
-	while(str != NULL)
+	while(split != NULL)
 	{
-		ptr = strtok(NULL, delim);
+		split = strtok(NULL, delim);
 	}
-	return (ptr);
+	return (split);
 }
