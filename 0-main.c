@@ -7,8 +7,9 @@
 int main(int argc, char(*argv[]))
 {
 	FILE *file;
-	char ch;
-	int line = 0;
+	char *line = NULL;
+	size_t len = 0;
+	ssize_t read;
 	/**stack_t **new;
 	new = malloc(sizeof(stack_t));**/
 	
@@ -28,15 +29,12 @@ int main(int argc, char(*argv[]))
 			printf("Error: Can't open file %s",argv[1]);
 			exit(EXIT_FAILURE);
 		}
-		do
+		while ((read = getline(&line, &len, file)) != -1)
 		{
-			ch = fgetc(file);
-			line = line + 1;
-			printf("%c",ch);
-			printf("%d", line);
+			printf("Retrieved line of length %zu :\n", read);
+			printf("%s", line);
 		}
-		while(ch != EOF);
-		fclose(file);
+		free(line);
 	}
 	return (0);
 }
