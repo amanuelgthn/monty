@@ -9,7 +9,7 @@ int main(int argc, char(*argv[]))
 	stack_t **new;
 	new = malloc(sizeof(stack_t));
 	
-	if (argc < 3 || (argc == 3 && isdigit(atoi(argv[2]) == 0)))
+	if (argc < 2)
 	{
 		printf("L<line_number>: usage: push integer\n");
 		exit(EXIT_FAILURE);
