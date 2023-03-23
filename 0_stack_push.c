@@ -10,7 +10,7 @@ void push(stack_t **stack, int data)
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
 	{
-		return (NULL);
+		printf("Stack overflow\n");
 	}
 	new->n = data;
 	new->next = *(stack);
