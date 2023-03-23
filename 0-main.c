@@ -1,4 +1,4 @@
-#include"lists.h"
+#include"monty.h"
 /**
 *main-main function for operation of stacks
 *@argc:number of arguments
