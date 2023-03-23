@@ -38,4 +38,5 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 void push(stack_t **stack, int data);
+char *str_split(char str);
 #endif /* _MONTY_ */ 
