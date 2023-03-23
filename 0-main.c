@@ -20,6 +20,6 @@ int main(int argc, char(*argv[]))
 		{
 			push(new, atoi(argv[2]));
 		}
-		return (new->n);
+		return ((*new)->n);
 	}
 }
