@@ -1,5 +1,5 @@
-#ifndef _LISTS_
-#define _LISTS_
+#ifndef _MONTY_
+#define _MONTY_
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -37,4 +37,4 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 void push(stack_t **stack, int data);
-#endif /* _LISTS_ */ 
+#endif /* _MONTY_ */ 
