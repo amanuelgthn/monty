@@ -7,7 +7,7 @@
 int main(int argc, char(*argv[]))
 {
 	stack_t **new;
-	new = NULL;
+	new = malloc(sizeof(stack_t);
 	
 	if (argc < 3 || (argc == 3 && isdigit(atoi(argv[2]) == 0)))
 	{
