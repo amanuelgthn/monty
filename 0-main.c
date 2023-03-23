@@ -6,21 +6,25 @@
 **/
 int main(int argc, char(*argv[]))
 {
+	File* file;
 	stack_t **new;
 	new = malloc(sizeof(stack_t));
 	
-	if (argc < 2)
+	if (argc != 2)
 	{
-		printf("L<line_number>: usage: push integer\n");
+		printf("USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	else 
+	else
 	{
-		if (strcmp( argv[1], "push") == 0)
+		if(fopen(argv[1], "r"))
 		{
-			push(new, atoi(argv[2]));
+			file = fopen(argv[1], "r"));
 		}
-		printf("%d\n",(*new)->n);
-		return ((*new)->n);
+		else
+		{
+			printf("Error: Can't open file %s",argv[1]);
+		}
 	}
+	return (0);
 }
