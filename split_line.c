@@ -13,5 +13,5 @@ char *str_split(char *str)
 	{
 		split = strtok(NULL, delim);
 	}
-	return (*split);
+	return (split);
 }
