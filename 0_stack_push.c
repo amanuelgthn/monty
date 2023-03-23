@@ -1,4 +1,4 @@
-#include"lists.h"
+#include"monty.h"
 /**
 *push-function to push an element to the stack
 *@data:element to be added to the stack
@@ -21,4 +21,3 @@ void push(stack_t **stack, int data)
 	}
 	(*stack) = new;
 }
-	
