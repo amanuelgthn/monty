@@ -31,7 +31,7 @@ int main(int argc, char(*argv[]))
 		}
 		while ((read = getline(&line, &len, file)) != -1)
 		{
-			printf("Retrieved line of length %zu :\n", read);
+			printf("Retrieved line of length %lu :\n", read);
 			printf("%s", line);
 		}
 		free(line);
