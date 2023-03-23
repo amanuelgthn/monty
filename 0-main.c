@@ -16,9 +16,9 @@ int main(int argc, char(*argv[]))
 	}
 	else 
 	{
-		if (strcmp( argc[1], "push") == 0)
+		if (strcmp( argv[1], "push") == 0)
 		{
-			push(*new, atoi(argv[2]));
+			push(new, atoi(argv[2]));
 		}
 		return (new->n);
 	}
