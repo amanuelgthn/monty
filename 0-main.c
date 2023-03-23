@@ -8,6 +8,7 @@ int main(int argc, char(*argv[]))
 {
 	FILE *file;
 	char ch;
+	int line = 0;
 	/**stack_t **new;
 	new = malloc(sizeof(stack_t));**/
 	
@@ -30,7 +31,9 @@ int main(int argc, char(*argv[]))
 		do
 		{
 			ch = fgetc(file);
+			line = line + 1;
 			printf("%c",ch);
+			printf("%d", line);
 		}
 		while(ch != EOF);
 		fclose(file);
