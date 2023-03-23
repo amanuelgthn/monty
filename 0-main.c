@@ -8,6 +8,7 @@ int main(int argc, char(*argv[]))
 {
 	FILE *file;
 	char *line = NULL;
+	char *split_line;
 	size_t len = 0;
 	ssize_t read;
 	/**stack_t **new;
@@ -32,7 +33,9 @@ int main(int argc, char(*argv[]))
 		while ((read = getline(&line, &len, file)) != -1)
 		{
 			printf("Retrieved line of length %lu :\n", read);
-			printf("%s", line);
+			printf("%s\n", line);
+			split_line = str_split(line);
+			printf("%s\n",split_line[0]);
 		}
 		free(line);
 	}
