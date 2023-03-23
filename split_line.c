@@ -4,7 +4,7 @@
 *@str:string to be splitted
 *Return:pointer to the splitted string
 **/
-char *str_split(char str)
+char *str_split(char *str)
 {
 	char delim[] = " ";
 	char *split = strtok(str, delim);
