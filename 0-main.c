@@ -6,7 +6,7 @@
 **/
 int main(int argc, char(*argv[]))
 {
-	stack_t *new;
+	stack_t **new;
 	new = NULL;
 	
 	if (argc < 3 || (argc == 3 && isdigit(atoi(argv[2]) == 0)))
@@ -16,9 +16,9 @@ int main(int argc, char(*argv[]))
 	}
 	else 
 	{
-		if (argv[1] == "push")
+		if (strcmp( argc[1], "push") == 0)
 		{
-			push(new, atoi(argv[2]));
+			push(*new, atoi(argv[2]));
 		}
 		return (new->n);
 	}
