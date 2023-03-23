@@ -35,7 +35,7 @@ int main(int argc, char(*argv[]))
 			printf("Retrieved line of length %lu :\n", read);
 			printf("%s\n", line);
 			split_line = str_split(line);
-			printf("%s\n",split_line[0]);
+			printf("%d\n",split_line[0]);
 		}
 		free(line);
 	}
