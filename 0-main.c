@@ -6,7 +6,6 @@
 **/
 int main(int argc, char(*argv[]))
 {
-	FILE *file;
 	/**stack_t **new;
 	new = malloc(sizeof(stack_t));**/
 	
@@ -19,7 +18,7 @@ int main(int argc, char(*argv[]))
 	{
 		if(fopen(argv[1], "r"))
 		{
-			file = fopen(argv[1], "r");
+			FILE *file = fopen(argv[1], "r");
 		}
 		else
 		{
