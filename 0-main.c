@@ -6,9 +6,9 @@
 **/
 int main(int argc, char(*argv[]))
 {
-	File* file;
-	stack_t **new;
-	new = malloc(sizeof(stack_t));
+	FILE *file;
+	/**stack_t **new;
+	new = malloc(sizeof(stack_t));**/
 	
 	if (argc != 2)
 	{
@@ -19,7 +19,7 @@ int main(int argc, char(*argv[]))
 	{
 		if(fopen(argv[1], "r"))
 		{
-			file = fopen(argv[1], "r"));
+			file = fopen(argv[1], "r");
 		}
 		else
 		{
