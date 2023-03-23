@@ -20,7 +20,7 @@ int main(int argc, char(*argv[]))
 		{
 			push(new, atoi(argv[2]));
 		}
-		printf("%d/n",(*new)->n);
+		printf("%d\n",(*new)->n);
 		return ((*new)->n);
 	}
 }
