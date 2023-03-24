@@ -12,7 +12,7 @@ int main(int argc, char(*argv[]))
 	size_t len = 0;
 	ssize_t read;
 	int words = 0;
-	stack_t *new;
+	stack_t *new = NULL;
 	new = malloc(sizeof(stack_t));
 	
 	if (argc != 2)
