@@ -1,5 +1,5 @@
 #include "monty.h"
-
+#include<stdio.h>
 glob_t global = {NULL, NULL};
 /**
  * main - Entry point
