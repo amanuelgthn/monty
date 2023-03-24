@@ -42,6 +42,7 @@ int main(int argc, char(*argv[]))
 			if(strcmp(split_line[0], "pall") == 0)
 			{
 				pall(new);
+				printf("%s\n",split_line[0]);
 			}
 		}
 		free(line);
