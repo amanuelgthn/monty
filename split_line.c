@@ -18,5 +18,5 @@ char **str_split(char *str)
 		string[i] =split;
 		i++;
 	}
-	return (string);
+	return (*string);
 }
