@@ -7,6 +7,7 @@ glob_t global = {NULL, NULL};
  * @argv: Arguments
  * Return: number of arguments.
  */
+int value;
 int main(int argc, char *argv[])
 {
 	if (argc == 2)
