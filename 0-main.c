@@ -45,6 +45,7 @@ int main(int argc, char(*argv[]))
 				printf("%s\n",split_line[0]);
 			}
 		}
+		pall(new);
 		free(line);
 	}
 	return (0);
