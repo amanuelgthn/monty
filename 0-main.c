@@ -11,7 +11,7 @@ int main(int argc, char(*argv[]))
 	char **split_line;
 	size_t len = 0;
 	ssize_t read;
-	int words = 0,i = 0;
+	int words = 0;
 	stack_t *new;
 	new = malloc(sizeof(stack_t));
 	
