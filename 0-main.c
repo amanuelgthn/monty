@@ -11,6 +11,7 @@ int main(int argc, char(*argv[]))
 	char **split_line[2];
 	size_t len = 0;
 	ssize_t read;
+	int words = 0;
 	/**stack_t **new;
 	new = malloc(sizeof(stack_t));**/
 	
@@ -34,7 +35,7 @@ int main(int argc, char(*argv[]))
 		{
 			printf("Retrieved line of length %lu :\n", read);
 			printf("%s\n", line);
-			split_line = str_split(line,0);
+			split_line = str_split(line,&words);
 			printf("%s\n",split_line[0]);
 		}
 		free(line);
