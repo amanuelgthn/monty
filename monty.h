@@ -39,4 +39,5 @@ typedef struct instruction_s
 } instruction_t;
 void push(stack_t **stack, int data);
 char **str_split(char *str, int *number_of_words);
+void pall(stack_t *stack);
 #endif /* _MONTY_ */ 
