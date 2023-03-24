@@ -8,7 +8,7 @@ int main(int argc, char(*argv[]))
 {
 	FILE *file;
 	char *line = NULL;
-	char **split_line;
+	char **split_line[2];
 	size_t len = 0;
 	ssize_t read;
 	/**stack_t **new;
