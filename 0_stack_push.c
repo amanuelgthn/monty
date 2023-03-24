@@ -3,7 +3,7 @@
 *push-function to push an element to the stack
 *@data:element to be added to the stack
 **/
-void push(stack_t **stack, unsigned int data)
+void _push(stack_t **stack, unsigned int data)
 {
 	stack_t *new;
 
