@@ -1,8 +1,7 @@
-#include"lists.h"
+#include"monty.h"
 /**
-*print_dlistint-print all elemensts in a doubly linked list
-*@h:a doubly linked list to be printed
-*Return: the number of nodes or elements in the doubly linked list
+*pall-print all elemensts in a doubly linked list
+*@stack:a doubly linked list to be printed
 **/
 void pall(stack_t *stack)
 {
