@@ -12,8 +12,8 @@ int main(int argc, char(*argv[]))
 	size_t len = 0;
 	ssize_t read;
 	int words = 0,i = 0;
-	/**stack_t **new;
-	new = malloc(sizeof(stack_t));**/
+	stack_t *new;
+	new = malloc(sizeof(stack_t));
 	
 	if (argc != 2)
 	{
@@ -33,11 +33,15 @@ int main(int argc, char(*argv[]))
 		}
 		while ((read = getline(&line, &len, file)) != -1)
 		{
-			printf("Retrieved line of length %lu :\n", read);
-			printf("%s\n", line);
 			split_line = str_split(line,&words);
-			printf("%s\n",split_line[i]);
-			i++;
+			if(strcmp(split_line[0], "push") == 0))
+			{
+				push(&new,atoi(split_line[1]));
+			}
+			if(strcmp(split_line[0], "pall") == 0))
+			{
+				pall(new);
+			}
 		}
 		free(line);
 	}
