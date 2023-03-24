@@ -34,6 +34,7 @@ int main(int argc, char(*argv[]))
 		while ((read = getline(&line, &len, file)) != -1)
 		{
 			split_line = str_split(line,&words);
+			printf("%s\n",split_line[0]);
 			if(strcmp(split_line[0], "push") == 0)
 			{
 				push(&new,atoi(split_line[1]));
