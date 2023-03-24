@@ -35,7 +35,7 @@ int main(int argc, char(*argv[]))
 		{
 			split_line = str_split(line,&words);
 			printf("%s\n",split_line[0]);
-			if(strcmp(split_line[0], "push") == 0)
+			if(strcmp(split_line[0], "pa") == 0)
 			{
 				push(&new,atoi(split_line[1]));
 				printf("%d\n",atoi(split_line[1]));
