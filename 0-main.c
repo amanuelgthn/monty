@@ -40,7 +40,7 @@ int main(int argc, char(*argv[]))
 				push(&new,atoi(split_line[1]));
 				printf("%d\n",atoi(split_line[1]));
 			}
-			if(strcmp(split_line[0], "pall") == 0)
+			else if(strcmp(split_line[0], "pall") == 0)
 			{
 				pall(new);
 				printf("%s\n",split_line[0]);
